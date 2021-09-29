@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://kit.fontawesome.com/3340e09ce9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.scss">
+    <script type="text/javascript" src="/js/main.js"></script>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP1</title>
+</head>
+
+<body>
+<header id="navbar">
+    <h1 class="logo"><a href="index.html">Jintao Yang</a></h1>
+    <ul class="nav">
+        <li class="about-section"><a href="#about-section">About</a></li>
+        <li class="slides-section"><a href="#slides-section">Slide</a></li>
+        <li class="video-section"><a href="#video-section">Video</a></li>
+        <li class="portfolio-section"><a href="#portfolio-section">Portfolio</a></li>
+    </ul>
+</header>
+
+<div class="bg">
+</div>
+
+<section id="about-section">
+<div class="multi-column-container">
+    <div class="column">
+        <i class="fas fa-user-graduate fa-5x"></i>
+        <h2>Education</h2>
+        <ul>
+            <li>Syracuse University</li>
+            <li>University of Illinois at Urbana-Champaign</li>
+        </ul>
+    </div>
+    <div class="column">
+        <i class="fas fa-laptop-code fa-5x"></i>
+        <br>
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML/CSS/JavaScript</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+        </ul>
+    </div>
+    <div class="column">
+        <i class="fas fa-book-open fa-5x"></i>
+        <h2>Courses</h2>
+        <ul>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>Web Programming</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section id="slides-section">
+<div class="carousel-container">
+    <div class="slide">
+        <img src="./assets/nyc1.jpg" style="width: 100%">
+    </div>
+
+    <div class="slide">
+        <img src="./assets/nyc2.jpg" style="width: 100%">
+    </div>
+
+    <div class="slide">
+        <img src="./assets/nyc3.jpg" style="width: 100%">
+    </div>
+
+    <div class="slide">
+        <img src="./assets/nyc4.jpg" style="width: 100%">
+    </div>
+
+    <div class="slide">
+        <img src="./assets/nyc5.jpg" style="width: 100%">
+    </div>
+    <a class="prev" onclick="forwardSlides(-1)">❮</a>
+    <a class="next" onclick="forwardSlides(1)">❯</a>
+</div>
+</section>
+
+<section id="video-section">
+<div class="video-container">
+    <video width="100%" height="100%" controls class="video">
+        <source src="assets/firework.mp4" type="video/mp4">
+        Your browser does not support the video.
+    </video>
+</div>
+</section>
+
+<section id="portfolio-section">
+<div class="portfolio">
+    <a class="portfolio-item" aria-controls="modal1">
+        <img src="assets/rose.jpg" class="portfolio-image">
+    </a>
+    <a class="portfolio-item" aria-controls="modal2">
+        <img src="assets/leaf.jpg" class="portfolio-image">
+    </a>
+    <a class="portfolio-item" aria-controls="modal3">
+        <img src="assets/fruit.jpg" class="portfolio-image">
+    </a>
+</div>
+</section>
+
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p>Rose</p>
+    </div>
+</div>
+
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p>Tree</p>
+    </div>
+</div>
+
+<div class="modal" id="modal3">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p>Fruit</p>
+    </div>
+</div>
+
+<footer id="footer">
+    <p>Author: Jintao Yang</p>
+    <p>jintaoy2@illinois.edu</p>
+    <div class="social-icons">
+        <a href="https://github.com/jyang54"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jintao-yang"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+</body>
 </html>
